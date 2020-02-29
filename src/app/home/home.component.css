@@ -5,3 +5,11 @@
 .align-title {
   margin-left: 0.5rem;
 }
+
+.card-background {
+  background-color: #eae9e9;
+}
+
+.card {
+  background-color: #d4d7dd;
+}
