@@ -1,15 +1,14 @@
-import { Component, SecurityContext } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { GameService } from './game.service';
+import { GameService } from '../game.service';
 import { DomSanitizer } from '@angular/platform-browser';
 
-
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class AppComponent {
+export class HomeComponent {
   title = 'nevermissit';
   allGames = [];
   trimmedWords: string;

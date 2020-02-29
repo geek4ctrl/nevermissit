@@ -8,9 +8,12 @@ import { EmbedVideo } from 'ngx-embed-video';
 import { NbThemeModule, NbLayoutModule, NbCardModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { OAuthModule } from 'angular-oauth2-oidc';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, HomeComponent, LoginComponent],
   imports: [
     BrowserModule,
     ClarityModule,
@@ -22,6 +25,7 @@ import { AppRoutingModule } from './app-routing.module';
     NbEvaIconsModule,
     AppRoutingModule,
     NbCardModule,
+    OAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
