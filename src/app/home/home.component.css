@@ -22,3 +22,16 @@
   background-color: #002538;
   color: white;
 }
+
+a {
+  color: white;
+}
+
+a:hover {
+  border: none;
+  text-decoration: none;
+}
+
+.laurent {
+  color: black;
+}
