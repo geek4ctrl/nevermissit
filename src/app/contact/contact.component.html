@@ -1,0 +1,39 @@
+<div class="clr-row">
+  <div class="clr-col-4">
+    <span>4</span>
+  </div>
+  <div class="clr-col-4">
+
+    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+
+      <div class="clr-row">
+        <clr-input-container>
+          <label>Name*</label>
+          <input clrInput type="text" id="name" required [(ngModel)]="user.name" name="name" #name="ngModel" />
+        </clr-input-container>
+      </div>
+
+      <div class="clr-row">
+        <clr-input-container>
+          <label>Email address</label>
+          <input clrInput type="text" name="email" required [(ngModel)]="user.email" name="email" #email="ngModel" />
+        </clr-input-container>
+      </div>
+
+      <div class="clr-row">
+
+        <clr-input-container>
+          <label>What do you think*</label>
+          <input clrInput type="text" name="suggestion" required [(ngModel)]="user.suggestion" #suggestion="suggestion"
+            #suggestion="ngModel" />
+        </clr-input-container>
+      </div>
+
+      <button type="submit" class="btn btn-success" [disabled]="!contactForm.form.valid">Submit</button>
+    </form>
+
+  </div>
+  <div class="clr-col-4">
+    <span>4</span>
+  </div>
+</div>

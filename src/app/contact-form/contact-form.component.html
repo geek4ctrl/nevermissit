@@ -1,0 +1,28 @@
+<div class="clr-col">
+  <h1 class="text-center mb-5">Get In Touch</h1>
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+        <div class="form-group">
+          <label for="Email">Email</label>
+          <input type="email" class="form-control feedback-input" name="Email" aria-describedby="emailHelp"
+            placeholder="Enter email" formControlName="Email" required>
+          <small id="emailHelp" class="form-text text-muted ">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" class="form-control feedback-input" name="Fullname" placeholder="Full Name"
+            formControlName="Fullname" required>
+        </div>
+        <div class="form-group">
+          <label for="comment">Comment</label>
+          <textarea class="form-control feedback-input" formControlName="Comment" name="Comment"
+            placeholder="Tell me what you have in mind" required>
+  </textarea>
+        </div>
+        <input type="submit" value="SUBMIT" [disabled]="!FormData.valid" />
+        <!-- <button type="submit" class="btn btn-primary" [disabled]="!FormData.valid">Submit</button> -->
+      </form>
+    </div>
+  </div>
+</div>

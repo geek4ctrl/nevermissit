@@ -11,9 +11,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { OAuthModule } from 'angular-oauth2-oidc';
+import { ContactComponent } from './contact/contact.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { ContactService } from './contact.service';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, LoginComponent],
+  declarations: [AppComponent, HomeComponent, LoginComponent, ContactComponent, ContactFormComponent, HeaderComponent, FooterComponent],
   imports: [
     BrowserModule,
     ClarityModule,
@@ -25,9 +31,11 @@ import { OAuthModule } from 'angular-oauth2-oidc';
     NbEvaIconsModule,
     AppRoutingModule,
     NbCardModule,
-    OAuthModule
+    OAuthModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
