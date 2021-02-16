@@ -28,7 +28,7 @@
     "@netlify-builder/deploy": "^3.0.0",
     "@webcomponents/custom-elements": "^1.0.0",
     "angular-oauth2-oidc": "^8.0.4",
-    "auth0-js": "^9.12.2",
+    "auth0-js": "^9.13.2",
     "clarity-angular": "^0.10.28",
     "eva-icons": "^1.1.2",
     "ngx-embed-video": "^1.0.4",
